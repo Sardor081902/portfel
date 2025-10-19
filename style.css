@@ -1,0 +1,33 @@
+section > div {
+text-align: right;
+}
+body {
+background-color: whitesmoke;
+}
+section > h2 {
+text-align: center;}
+.text-photo {
+  display: flex; 
+  align-items: center; 
+  justify-content: right; 
+  gap: 200px; 
+  margin-right:   100px;        
+}
+
+
+.text-photo img {
+    width: 400px; border-radius: 1000px;}       
+.box {
+    background-color: darkgoldenrod;
+    padding: 15px 20px;
+    color: black;
+    width: 1000px;
+    margin: 200px auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: -300px;
+    font-size: 40px;
+    margin-left: 200px;
+    border-radius: 20px;
+}
