@@ -2,7 +2,7 @@ section > div {
 text-align: right;
 }
 body {
-background-color: whitesmoke;
+background-color: white;
 }
 section > h2 {
 text-align: center;}
@@ -13,8 +13,6 @@ text-align: center;}
   gap: 200px; 
   margin-right:   100px;        
 }
-
-
 .text-photo img {
     width: 400px; border-radius: 1000px;}       
 .box {
@@ -31,6 +29,7 @@ text-align: center;}
     margin-left: 200px;
     border-radius: 20px;
     text-align: left;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 .box2 {
   background-color: blanchedalmond;
@@ -41,6 +40,7 @@ text-align: center;}
   text-align: left;
   width: 1000px;
   margin-right: 200px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 .box3 {
   background-color: blanchedalmond;
@@ -51,6 +51,7 @@ text-align: center;}
   text-align: left;
   width: 1000px;
   margin-left: 200px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 .box4 {
   background-color: blanchedalmond;
@@ -61,4 +62,6 @@ text-align: center;}
   text-align: left;
   width: 1000px;
   margin-right: 200px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
+
