@@ -1,4 +1,7 @@
+
 .aboutbox {
+  display: flex;
+  background-color: white;
   display: flex;
   background-color: white;
   padding: 15px 20px;
