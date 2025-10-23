@@ -27,29 +27,7 @@ text-align: center;}
 .text-photo img {
     width: 400px; border-radius: 1000px;}       
 
-     
-.contactbox {
-  background-color: blanchedalmond;
-  padding: 15px 20px;
-  color:black;
-  margin: 200px auto;
-  border-radius: 20px;
-  text-align: left;
-  width: 1000px;
-  margin-left: 200px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-}
-.skillbox {
-  background-color: blanchedalmond;
-  padding: 15px 20px;
-  color:black;
-  margin: 200px auto;
-  border-radius: 20px;
-  text-align: left;
-  width: 1000px;
-  margin-right: 200px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-}
+    
  
 html {
   scroll-behavior: smooth;
