@@ -149,6 +149,10 @@ html  {
     color: gray;
     font-size: 30px;
 }
+#projectbox p:active {
+    transform: scale(0.98);
+    background-color: #e9e9e9;
+}
 
 /* Footer Section */
 
