@@ -191,33 +191,73 @@ html {
 
 /* Skills section */
 
-.skills{
+.skills {
     gap: 20px;
     position: relative;
 }
+
 .skills__title {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 36px;
-    margin-top: 200px ;
+    margin-top: 200px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.html {
+
+.html{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
     background-color: white;
-    margin: 10px 100px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px 3px;
-    width: auto;
-    padding: 12px;
-    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 10px auto ;
 }
 .html__parcent {
     width: 80%;
-    background-color: #ae00ff;
+    background-color: #ff8800a8;
+    padding: 2px 2px;
+    border-radius: 2px;
 }
+
+.css{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px 3px;
+    padding: 10px 10px;
+    margin: 10px auto ;
+}
+.css__parcent {
+    width: 75%;
+    background-color: #0000ffa8;
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+
+.js{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px 3px;
+    padding: 10px 10px;
+    margin: 10px auto ;
+}
+.js__parcent {
+    width: 13%;
+    background-color: #ffe203a8;
+    padding: 2px 2px;
+    border-radius: 2px;
+}
+
 
 .number {
     position: fixed;
-    display: flex; 
+    display: flex;
     gap: 20px;
     bottom: 25px;
     left: 0;
