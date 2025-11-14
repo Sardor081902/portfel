@@ -39,9 +39,23 @@ header {
     display: flex;
     gap: 64px;
     list-style-type: none;
-    margin-right: 60px;
+    margin-right: 80px;
     position: relative;
+    visibility: hidden;
+    color: gray;
 }
+.nav.active{
+    margin-right: 60px;
+    gap: 64px;
+    visibility: visible;
+}
+.navshow {
+    position: relative;
+    top: 24px;
+    font-size: 36px;
+    left: 1060px;
+}
+
 
 .photo {
     display: flex;
@@ -59,9 +73,12 @@ header {
     transition: color 200ms;
 }
 
+
 .header.active {
     color: #ae00ff;
-    transition: color 0.3ms;
+    text-decoration: underline;
+    line-height: 4px;
+    transform: scale(1.1);
 }
 
 /* Info Section */
@@ -110,7 +127,7 @@ i:hover {
     transform: scale(1.2);
 }
 
-#SMTH {
+#smth {
     opacity: 0;
 }
 
@@ -217,8 +234,8 @@ html {
 }
 .html__parcent {
     width: 80%;
-    background-color: #ff8800a8;
-    padding: 2px 2px;
+    background-color: #ff88005d;
+    padding: 2px 8px;
     border-radius: 2px;
 }
 
@@ -233,8 +250,8 @@ html {
 }
 .css__parcent {
     width: 75%;
-    background-color: #0000ffa8;
-    padding: 2px 2px;
+    background-color: #0000ff55;
+    padding: 2px 8px;
     border-radius: 2px;
 }
 
@@ -249,8 +266,8 @@ html {
 }
 .js__parcent {
     width: 13%;
-    background-color: #ffe203a8;
-    padding: 2px 2px;
+    background-color: #ffe2033e;
+    padding: 2px 8px;
     border-radius: 2px;
 }
 

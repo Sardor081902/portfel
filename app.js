@@ -35,3 +35,9 @@ skillsBox.addEventListener('mouseenter', () => {
 skillsBox.addEventListener('mouseleave', () => {
   skillsLink.classList.remove('active')
 });
+
+const navshow = document.querySelector('.navshow');
+
+navshow.onclick = function() {
+  document.querySelector('.nav').classList.toggle('active');
+};
