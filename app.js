@@ -38,6 +38,19 @@ skillsBox.addEventListener('mouseleave', () => {
 
 const navshow = document.querySelector('.navshow');
 
-navshow.onclick = function() {
+navshow.onclick = function () {
   document.querySelector('.nav').classList.toggle('active');
-};
+}
+
+navshow.addEventListener('click', () =>
+  {
+    navshow.classList.toggle('active');
+
+    if
+      (navshow.classList.contains('active'))
+{
+  navshow.style.color = 'black';
+} else {
+  navshow.style.color = '';
+} 
+})
