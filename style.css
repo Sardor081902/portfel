@@ -61,6 +61,7 @@ header {
     left: 97%;
     color: #ae00ff;
     transition: transform 300ms;
+    transform: rotateZ(15deg);
 }
 
 .navshow:hover {
@@ -75,6 +76,11 @@ header {
 .navshow.active {
     color: black;
     transition: all 300ms;
+    transform: rotateZ(-180deg);
+}
+
+.navshow.active:hover {
+    transform: scale(1.2);
 }
 
 .photo {
@@ -267,7 +273,7 @@ html {
 }
 .html__parcent {
     width: 80%;
-    background-color: #ff88005d;
+    background-color: #ff3c005d;
     padding: 2px 8px;
     border-radius: 2px;
 }
