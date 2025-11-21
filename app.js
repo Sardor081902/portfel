@@ -38,19 +38,39 @@ skillsBox.addEventListener('mouseleave', () => {
 
 const navshow = document.querySelector('.navshow');
 
+
 navshow.onclick = function () {
   document.querySelector('.nav').classList.toggle('active');
 }
 
-navshow.addEventListener('click', () =>
-  {
-    navshow.classList.toggle('active');
+navshow.addEventListener('click', () => {
+  navshow.classList.toggle('active');
 
-    if
-      (navshow.classList.contains('active'))
-{
-  navshow.style.color = 'black';
-} else {
-  navshow.style.color = '';
-} 
+  if
+    (navshow.classList.contains('active')) {
+    navshow.style.color = 'black';
+  } else {
+    navshow.style.color = '';
+  }
+})
+
+const black__mode = document.querySelector('.bt')
+const main = document.querySelector('main')
+const about__text = document.querySelector('.about__text')
+const sub__title = document.querySelector('.sub__title')
+
+black__mode.addEventListener('click', () => {
+  black__mode.classList.toggle('active');
+
+  if
+    (black__mode.classList.contains('active')) {
+    homeBox.style.backgroundColor = 'black';
+    main.style.backgroundColor = 'black';
+    about__text.style.color = 'blue';
+    
+  } else {
+    homeBox.style.backgroundColor = '';
+    main.style.backgroundColor = '';
+    about__text.style.color = '';
+  }
 })
