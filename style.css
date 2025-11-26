@@ -26,7 +26,7 @@ header {
 
 /* Navigation Menu */
 
-#homebox {
+#home__box {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px 3px;
     position: fixed;
@@ -37,7 +37,8 @@ header {
 .nav {
     margin: 36px;
     display: flex;
-    gap: 64px;;
+    gap: 64px;
+    ;
     list-style-type: none;
     margin-right: 0px;
     position: relative;
@@ -46,7 +47,8 @@ header {
     transition: all 400ms;
     top: -100px;
 }
-.nav.active{
+
+.nav.active {
     margin-right: 108px;
     gap: 64px;
     visibility: visible;
@@ -54,6 +56,7 @@ header {
     position: relative;
     top: 0;
 }
+
 .navshow {
     position: absolute;
     top: 24px;
@@ -69,7 +72,7 @@ header {
 
 .navshow:active {
     transform: scale(1);
-    
+
 }
 
 .navshow.active {
@@ -194,7 +197,7 @@ header {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px 3px;
     padding: 15px 30px;
     /* border-radius: 25px; */
-    
+
 }
 
 .about__text {
@@ -216,7 +219,7 @@ html {
     width: 100%;
 }
 
-#projectbox {
+#project__box {
     width: 80%;
     margin: auto;
     display: flex;
@@ -226,7 +229,7 @@ html {
     margin-top: 200px;
 }
 
-#projectbox p {
+.window {
     width: 20%;
     height: 400px;
     margin-top: 50px;
@@ -240,19 +243,19 @@ html {
     font-size: 30px;
 }
 
-#projectbox p:active {
+.window:active {
     transform: scale(0.98);
     background-color: #e9e9e9;
 }
 
-#projectbox p:active {
+.window:active {
     transform: scale(0.98);
     background-color: #f8f8f8;
 }
 
 /* Skills section */
 
-.skills {
+.skills__box {
     gap: 20px;
     position: relative;
 }
@@ -267,15 +270,16 @@ html {
     flex-direction: column;
 }
 
-.html{
+.html {
     display: flex;
     justify-content: space-between;
     width: 80%;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px 3px;
     padding: 10px 10px;
-    margin: 10px auto ;
+    margin: 10px auto;
 }
+
 .html__parcent {
     width: 80%;
     background-color: #ff3c005d;
@@ -283,15 +287,16 @@ html {
     border-radius: 2px;
 }
 
-.css{
+.css {
     display: flex;
     justify-content: space-between;
     width: 80%;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px 3px;
     padding: 10px 10px;
-    margin: 10px auto ;
+    margin: 10px auto;
 }
+
 .css__parcent {
     width: 75%;
     background-color: #0000ff55;
@@ -299,15 +304,16 @@ html {
     border-radius: 2px;
 }
 
-.js{
+.js {
     display: flex;
     justify-content: space-between;
     width: 80%;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px 3px;
     padding: 10px 10px;
-    margin: 10px auto ;
+    margin: 10px auto;
 }
+
 .js__parcent {
     width: 13%;
     background-color: #ffe2033e;
@@ -368,6 +374,36 @@ footer {
     color: #555;
 }
 
-.bt header body {
-    background-color: w
-}   
+.main__box.dark__mode,
+#home__box.dark__mode,
+#info__box.dark__mode,
+#about__box.dark__mode,
+#skills__box.dark__mode,
+.body.dark__mode {
+    background-color: #121212;
+    color: #ffffff;
+    background: linear-gradient(to left, rgb(16, 16, 16), rgb(32, 32, 32));
+    background-size: 200% 100%;
+    transition: all 300ms;
+}
+
+.footer.dark__mode {
+    background-color: #1c1c1c;
+}
+
+.about__text.dark__mode,
+.anumber.dark__mode,
+.html.dark__mode,
+.css.dark__mode,
+.js.dark__mode,
+.window.dark__mode {
+    background-color: #1c1c1c;
+    color: white;
+    box-shadow: rgba(255, 255, 255, 0.05) 0px 0px 10px 3px;
+    transition: all 300ms;  
+}
+
+.window.dark__mode:active {
+    transform: scale(0.98);
+    background-color: #181818;
+}

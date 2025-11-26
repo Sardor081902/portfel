@@ -1,7 +1,7 @@
 // Consts    
     // header section
 
-    const homeBox = document.querySelector('#homebox');
+    const homeBox = document.querySelector('#home__box');
     const logo = document.querySelector('.logo');
     const sardor = document.querySelector('.sardor');
     const navshow = document.querySelector('.navshow');
@@ -20,7 +20,7 @@
 
         // infobox section, social
 
-        const infobox = document.querySelector('#infobox');
+        const infobox = document.querySelector('#info__box');
         const icons = document.querySelectorAll('.icons'); // foreach
 
         // aboutbox section 
@@ -30,7 +30,7 @@
 
         // skills section 
 
-        const skillsBox = document.querySelector('#skills');
+        const skillsBox = document.querySelector('#skills__box');
 
     // footer section 
         const footer = document.querySelector('.footer')
@@ -50,5 +50,15 @@ navshow.addEventListener('click', () => {
     navshow.style.color = '';
   }
 })
+const dark__box = document.querySelectorAll(
+  '.about__text, .html, .css, .js, .window,.main__box, #home__box, #info__box, #about__box, #project__box, #skills__box, .footer, .body ' 
+);
 
-  
+dark__mode.onclick = () => {
+  dark__box.forEach(el => {
+    el.classList.toggle('dark__mode');
+  });
+};
+
+
+
