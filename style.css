@@ -43,7 +43,6 @@ header {
     margin-right: 0px;
     position: relative;
     visibility: hidden;
-    color: gray;
     transition: all 400ms;
     top: -100px;
 }
@@ -406,4 +405,8 @@ footer {
 .window.dark__mode:active {
     transform: scale(0.98);
     background-color: #181818;
+}
+
+.header.dark__mode{
+    color: white;
 }

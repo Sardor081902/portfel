@@ -1,44 +1,44 @@
 // Consts    
-    // header section
+// header section
 
-    const homeBox = document.querySelector('#home__box');
-    const logo = document.querySelector('.logo');
-    const sardor = document.querySelector('.sardor');
-    const navshow = document.querySelector('.navshow');
-    const dark__mode = document.querySelector('.bt');
-    const nav__text = document.querySelector('.header');
+const homeBox = document.querySelector('#home__box');
+const logo = document.querySelector('.logo');
+const sardor = document.querySelector('.sardor');
+const navshow = document.querySelector('.navshow');
+const dark__mode = document.querySelector('.bt');
+const nav__text = document.querySelector('.header');
 
-        // header / nav section
+// header / nav section
 
-        const nav = document.querySelector('.nav');
-        const home = document.querySelector('.home a');
-        const about = document.querySelector('.about a');
-        const skills = document.querySelector('skills a');
-        const project =document.querySelector('.project a');
+const nav = document.querySelector('.nav');
+const home = document.querySelector('.home a');
+const about = document.querySelector('.about a');
+const skills = document.querySelector('skills a');
+const project = document.querySelector('.project a');
 
-    // main section 
+// main section 
 
-        // infobox section, social
+// infobox section, social
 
-        const infobox = document.querySelector('#info__box');
-        const icons = document.querySelectorAll('.icons'); // foreach
+const infobox = document.querySelector('#info__box');
+const icons = document.querySelectorAll('.icons'); // foreach
 
-        // aboutbox section 
+// aboutbox section 
 
-        const aboutBox = document.querySelector('#aboutbox');
-        const about__text = document.querySelector('.about__text'); 
+const aboutBox = document.querySelector('#aboutbox');
+const about__text = document.querySelector('.about__text');
 
-        // skills section 
+// skills section 
 
-        const skillsBox = document.querySelector('#skills__box');
+const skillsBox = document.querySelector('#skills__box');
 
-    // footer section 
-        const footer = document.querySelector('.footer')
+// footer section 
+const footer = document.querySelector('.footer')
 
 // Nav 
 
 navshow.onclick = function () {
-    document.querySelector('.nav').classList.toggle('active');
+  nav.classList.toggle('active');
 }
 
 navshow.addEventListener('click', () => {
@@ -51,7 +51,7 @@ navshow.addEventListener('click', () => {
   }
 })
 const dark__box = document.querySelectorAll(
-  '.about__text, .html, .css, .js, .window,.main__box, #home__box, #info__box, #about__box, #project__box, #skills__box, .footer, .body ' 
+  '.about__text, .html, .css, .js, .window,.main__box, #home__box, #info__box, #about__box, #project__box, #skills__box, .footer, .body, .header '
 );
 
 dark__mode.onclick = () => {
@@ -60,5 +60,13 @@ dark__mode.onclick = () => {
   });
 };
 
+const dark__mode__logo = () => {
+  const icon = document.getElementById('icon__dark'); 
 
+  if (dark__box.classList.contains('dark__mode')) {
+    icon__dark.classList.replace('fa-moon', 'fa-sun');
+  } else {
+    icon__dark.classList.replace('fa-sun', 'fa-moon');
+  }
+};
 
