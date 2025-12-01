@@ -11,26 +11,25 @@ const nav__text = document.querySelector('.header');
 // header / nav section
 
 const nav = document.querySelector('.nav');
-const home = document.querySelector('.home a');
-const about = document.querySelector('.about a');
-const skills = document.querySelector('skills a');
-const project = document.querySelector('.project a');
 
+
+const Navs = document.querySelectorAll('.project, .skills, .about, .home');
+const Boxs = document.querySelectorAll('#info__box, #about__box, #skills__box, #project__box');
 // main section 
 
 // infobox section, social
 
-const infobox = document.querySelector('#info__box');
+
 const icons = document.querySelectorAll('.icons'); // foreach
 
 // aboutbox section 
 
-const aboutBox = document.querySelector('#aboutbox');
+
 const about__text = document.querySelector('.about__text');
 
 // skills section 
 
-const skillsBox = document.querySelector('#skills__box');
+
 
 // footer section 
 const footer = document.querySelector('.footer')
@@ -61,12 +60,25 @@ dark__mode.onclick = () => {
 };
 
 const dark__mode__logo = () => {
-  const icon = document.getElementById('icon__dark'); 
+  const icon__dark = document.getElementById('icon__dark'); 
 
   if (dark__box.classList.contains('dark__mode')) {
-    icon__dark.classList.replace('fa-moon', 'fa-sun');
+    icon__dark.classList.remove('.fa-regular fa-moon') && add('.fa-regular fa-sun');
   } else {
-    icon__dark.classList.replace('fa-sun', 'fa-moon');
+    icon__dark.classList.remove('.fa-regular fa-sun') && add('fa-regular fa-moon');
   }
 };
 
+for (const box of Boxs) {
+    box.addEventListener('mouseenter', () => {
+        for (const menu of Navs) {
+            menu.classList.add('active');
+        }
+    });
+    box.addEventListener('mouseleave', () => {
+      for (const menu of Navs) {
+        menu.classList.remove('active')
+      }
+      
+    });
+}
