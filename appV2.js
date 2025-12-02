@@ -13,7 +13,7 @@ const nav__text = document.querySelector('.header');
 const nav = document.querySelector('.nav');
 
 
-const Navs = document.querySelectorAll('.project, .skills, .about, .home');
+const Navs = document.querySelectorAll('.project a, .skills a, .about a, .home a');
 const Boxs = document.querySelectorAll('#info__box, #about__box, #skills__box, #project__box');
 // main section 
 
